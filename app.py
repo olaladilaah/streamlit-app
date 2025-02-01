@@ -9,13 +9,21 @@
 import streamlit as st
 import pandas as pd
 import pickle
+import os
 
-# Fungsi untuk memuat model yang telah dilatih sebelumnya
+if not os.path.exists('model.pkl'):
+    st.error("File model.pkl tidak ditemukan. Pastikan file tersebut ada di direktori yang sama dengan app.py.")
+model = load_trained_model('models/model.pkl')
+
 @st.cache_data()
 def load_trained_model(path_to_model):
-    with open(path_to_model, 'rb') as model_file:
-        trained_model = pickle.load(model_file)
-    return trained_model
+    try:
+        with open(path_to_model, 'rb') as model_file:
+            trained_model = pickle.load(model_file)
+        return trained_model
+    except Exception as e:
+        st.error(f"Terjadi kesalahan saat memuat model: {e}")
+        return None
 
 # Fungsi untuk melakukan prediksi berdasarkan input data
 def make_prediction(trained_model, input_features):
