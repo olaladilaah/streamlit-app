@@ -1,6 +1,3 @@
-# streamlit-app
-Aplikasi Streamlit untuk penerapan data science
-
 # Proyek Akhir: Menyelesaikan Permasalahan Perusahaan Edutech
 # Nama: Adilah Widiasti
 # Email: adilahwidiasti86@gmail.com
@@ -68,8 +65,9 @@ Untuk menjalankan aplikasi ini, Anda perlu mengikuti langkah-langkah berikut:
    - Hasil prediksi akan ditampilkan di bawah tombol prediksi. Jika hasilnya adalah '1', maka mahasiswa tersebut tidak berpotensi dropout. Jika hasilnya adalah '0', maka mahasiswa tersebut berpotensi dropout.
 
 ## Streamlit 
-  Local URL: http://localhost:8501
-  Network URL: http://192.168.0.191:8501
+   Local URL: http://localhost:8501
+   Network URL: http://192.168.0.191:8501
+   Link Deployment streamlit : https://education-dropout-adilah-widiasti.streamlit.app/
 
 ## Cara menjalankan Streamlit 
 1. Buka Terminal CMD :
@@ -85,9 +83,7 @@ Untuk menjalankan aplikasi ini, Anda perlu mengikuti langkah-langkah berikut:
    dir 
    streamlit run app.py 
    Local URL: http://localhost:8501
-   Link Deployment streamlit : https://app-app-r88qidyzmzobf9nqmce8vb.streamlit.app/ 
-
-
+   Link Deployment streamlit : https://education-dropout-adilah-widiasti.streamlit.app/
 
 ## Business Dashboard
 Dashboard bisnis ini dirancang untuk memprediksi kemungkinan seorang mahasiswa mengalami dropout di Jaya Jaya Institut. Prediksi dilakukan dengan menggunakan model machine learning yang telah dilatih sebelumnya untuk menganalisis data yang dimasukkan. Dashboard ini menyediakan berbagai kolom input yang mencerminkan faktor-faktor yang dapat memengaruhi dropout mahasiswa, seperti metode pendaftaran, mata kuliah yang diambil, riwayat pendidikan, pekerjaan orang tua, serta aspek akademik lainnya. Model yang telah disimpan akan memproses data tersebut dan menghasilkan prediksi, sehingga pengguna dapat memperoleh wawasan mengenai potensi dropout mahasiswa. Dengan adanya dashboard ini, Jaya Jaya Institut diharapkan dapat mengambil langkah preventif secara lebih dini guna menekan angka dropout dan mendukung kesuksesan akademik mahasiswa.
@@ -110,7 +106,3 @@ Berikut adalah beberapa strategi yang dapat diterapkan oleh Jaya Jaya Institut u
 ## Email dan password Metabase
 Email: root@mail.com
 Password: root123
-
-
-
-
